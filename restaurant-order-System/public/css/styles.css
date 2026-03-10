@@ -1,0 +1,94 @@
+body{
+
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg,#1d2b64,#f8cdda);
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.container{
+
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+width:500px;
+text-align:center;
+
+}
+
+h1{
+
+margin-bottom:20px;
+
+}
+
+.menu-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+
+}
+
+.menu-grid button{
+
+background:#3498db;
+border:none;
+color:white;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+transition:0.3s;
+
+}
+
+.menu-grid button:hover{
+
+background:#2c80b4;
+transform:scale(1.05);
+
+}
+
+.actions{
+
+margin-top:25px;
+display:flex;
+gap:10px;
+justify-content:center;
+
+}
+
+.actions button{
+
+background:#2ecc71;
+border:none;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+
+}
+
+.actions button:hover{
+
+background:#27ae60;
+transform:scale(1.05);
+
+}
+
+.bill{
+
+margin-top:25px;
+font-size:28px;
+font-weight:bold;
+color:#333;
+
+}

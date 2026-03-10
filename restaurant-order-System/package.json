@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-order-system",
+  "version": "1.0.0",
+  "description": "Restaurant order system using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
