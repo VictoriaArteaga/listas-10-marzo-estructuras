@@ -1,7 +1,7 @@
-import { Client } from "../roles/Client";
-import { Waiter } from "../roles/Waiter";
-import { Kitchen } from "../roles/Kitchen";
-import { Cashier } from "../roles/Cashier";
+import { Client } from "../roles/Client.js";
+import { Waiter } from "../roles/Waiter.js";
+import { Kitchen } from "../roles/Kitchen.js";
+import { Cashier } from "../roles/Cashier.js";
 export class OrderService {
     constructor() {
         this.client = new Client();

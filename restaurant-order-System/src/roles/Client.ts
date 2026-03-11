@@ -1,5 +1,5 @@
-import { MenuItem } from "../models/MenuItem";
-import { Order } from "../models/Order";
+import { MenuItem } from "../models/MenuItem.js";
+import { Order } from "../models/Order.js";
 
 export class Client {
 

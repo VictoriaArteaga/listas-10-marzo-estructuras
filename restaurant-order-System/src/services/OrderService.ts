@@ -1,9 +1,9 @@
-import { Client } from "../roles/Client";
-import { Waiter } from "../roles/Waiter";
-import { Kitchen } from "../roles/Kitchen";
-import { Cashier } from "../roles/Cashier";
-import { MenuItem } from "../models/MenuItem";
-import { Order } from "../models/Order";
+import { Client } from "../roles/Client.js";
+import { Waiter } from "../roles/Waiter.js";
+import { Kitchen } from "../roles/Kitchen.js";
+import { Cashier } from "../roles/Cashier.js";
+import { MenuItem } from "../models/MenuItem.js";
+import { Order } from "../models/Order.js";
 
 export class OrderService {
 

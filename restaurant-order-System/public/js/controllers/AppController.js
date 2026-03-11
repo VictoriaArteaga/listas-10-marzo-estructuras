@@ -1,5 +1,5 @@
-import { OrderService } from "../services/OrderService";
-import { MenuItem } from "../models/MenuItem";
+import { OrderService } from "../services/OrderService.js";
+import { MenuItem } from "../models/MenuItem.js";
 export class AppController {
     constructor() {
         this.service = new OrderService();
