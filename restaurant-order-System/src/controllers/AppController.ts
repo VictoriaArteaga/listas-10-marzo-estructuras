@@ -49,8 +49,10 @@ export class AppController {
             button.classList.add("menu-item");
 
             button.innerHTML = `
-                <span class="item-name">${item.name}</span>
-                <span class="item-price">$${item.price}</span>
+                <img src="https://source.unsplash.com/300x200/?food" />
+                <div class="menu-info">
+                <div class="item-name">${item.name}</div>
+                <div class="item-price">$${item.price}</div>
             `;
 
             button.addEventListener("click", () => {

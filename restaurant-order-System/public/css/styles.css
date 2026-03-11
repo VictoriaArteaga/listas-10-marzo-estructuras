@@ -2,93 +2,197 @@ body{
 
 margin:0;
 font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(135deg,#1d2b64,#f8cdda);
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
+background:#f4f5fb;
 
 }
 
-.container{
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+color:#6a2ccf;
+
+}
+
+.tagline{
+
+color:#888;
+
+}
+
+.layout{
+
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:40px;
+padding:40px 60px;
+
+}
+
+.menu-section{
 
 background:white;
-padding:40px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-width:500px;
-text-align:center;
-
-}
-
-h1{
-
-margin-bottom:20px;
+padding:30px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
 
 }
 
 .menu-grid{
 
+margin-top:20px;
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:25px;
 
 }
 
-.menu-grid button{
+.menu-item{
 
-background:#3498db;
-border:none;
-color:white;
-padding:12px;
-border-radius:8px;
+background:white;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+overflow:hidden;
 cursor:pointer;
-font-size:14px;
+border:none;
 transition:0.3s;
 
 }
 
-.menu-grid button:hover{
+.menu-item:hover{
 
-background:#2c80b4;
-transform:scale(1.05);
+transform:translateY(-6px);
+box-shadow:0 18px 30px rgba(0,0,0,0.12);
+
+}
+
+.menu-item img{
+
+width:100%;
+height:140px;
+object-fit:cover;
+
+}
+
+.menu-info{
+
+padding:15px;
+
+}
+
+.item-name{
+
+font-weight:600;
+margin-bottom:5px;
+
+}
+
+.item-price{
+
+color:#6a2ccf;
+font-weight:bold;
+
+}
+
+.order-panel{
+
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+height:fit-content;
+
+}
+
+.order-list{
+
+list-style:none;
+padding:0;
+margin-bottom:20px;
+
+}
+
+.order-list li{
+
+padding:10px 0;
+border-bottom:1px solid #eee;
+
+}
+
+.total-box{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+
+}
+
+.total-box h3{
+
+color:#6a2ccf;
+font-size:26px;
 
 }
 
 .actions{
 
-margin-top:25px;
 display:flex;
-gap:10px;
-justify-content:center;
+flex-direction:column;
+gap:12px;
 
 }
 
-.actions button{
+.btn{
 
-background:#2ecc71;
+padding:12px;
 border:none;
-color:white;
-padding:12px 20px;
 border-radius:8px;
-cursor:pointer;
 font-weight:bold;
+cursor:pointer;
 transition:0.3s;
 
 }
 
-.actions button:hover{
+.purple{
 
-background:#27ae60;
-transform:scale(1.05);
+background:#6a2ccf;
+color:white;
 
 }
 
-.bill{
+.purple:hover{
 
-margin-top:25px;
-font-size:28px;
-font-weight:bold;
-color:#333;
+background:#5221a3;
+
+}
+
+.gray{
+
+background:#f1f2f7;
+
+}
+
+.green{
+
+background:#28c76f;
+color:white;
+
+}
+
+.green:hover{
+
+background:#22a55f;
 
 }

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Restaurant Order System</title>
+<title>Mavi's Restaurant</title>
 
 <link rel="stylesheet" href="public/css/styles.css">
 
@@ -14,59 +14,66 @@
 
 <body>
 
-<div class="container">
+<header class="header">
 
-<h1> Restaurant Order System</h1>
+<div class="logo">
+Mavi's Restaurant
+</div>
 
-<!-- MENU SECTION -->
+<div class="tagline">
+Delicious food made simple
+</div>
 
-<div class="menu-section">
+</header>
 
-<h2>Menu</h2>
+
+<main class="layout">
+
+<!-- MENU -->
+
+<section class="menu-section">
+
+<h2>Our Menu</h2>
 
 <div id="menu" class="menu-grid"></div>
 
+</section>
+
+
+<!-- ORDER PANEL -->
+
+<aside class="order-panel">
+
+<h2>Your Order</h2>
+
+<ul id="orderPreview" class="order-list"></ul>
+
+<div class="total-box">
+
+<span>Total</span>
+<h3 id="total">$0</h3>
+
 </div>
-
-
-<!-- CURRENT ORDER -->
-
-<div class="order-section">
-
-<h2>Current Order</h2>
-
-<ul id="orderPreview" class="order-preview"></ul>
-
-</div>
-
-
-<!-- ACTION BUTTONS -->
 
 <div class="actions">
 
-<button id="sendKitchen">Send Order</button>
+<button id="sendKitchen" class="btn purple">
+Send Order
+</button>
 
-<button id="getBill">Request Bill</button>
+<button id="getBill" class="btn gray">
+Calculate Bill
+</button>
 
-<button id="pay">Pay Order</button>
-
-</div>
-
-
-<!-- TOTAL BILL -->
-
-<div class="bill-section">
-
-<h2>Total</h2>
-
-<div id="total" class="total-amount">$0</div>
+<button id="pay" class="btn green">
+Pay Order
+</button>
 
 </div>
 
-</div>
+</aside>
 
-
-<!-- TYPESCRIPT COMPILED JS -->
+</main>
 
 <script type="module" src="./public/js/main.js"></script>
 
